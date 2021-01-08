@@ -23,7 +23,6 @@ const { app, protocol, crashReporter } = require('electron');
 // Disable render process reuse, we still have
 // non-context aware native modules in the renderer.
 app.allowRendererProcessReuse = false;
-
 // Enable portable support
 const portable = bootstrapNode.configurePortable(product);
 
@@ -166,6 +165,7 @@ if (locale) {
 
 // Load our code once ready
 app.once('ready', function () {
+	// setTimeout(() => {
 	if (args['trace']) {
 		const contentTracing = require('electron').contentTracing;
 
@@ -178,6 +178,7 @@ app.once('ready', function () {
 	} else {
 		onReady();
 	}
+	// }, 500)
 });
 
 /**
@@ -288,6 +289,9 @@ function configureCommandlineSwitchesSync(cliArgs) {
 			}
 		}
 	});
+
+	app.commandLine.appendSwitch('enable-transparent-visuals');
+	app.commandLine.appendSwitch('disable-gpu');
 
 	// Support JS Flags
 	const jsFlags = getJSFlags(cliArgs);

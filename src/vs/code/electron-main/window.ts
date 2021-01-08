@@ -151,13 +151,15 @@ export class CodeWindow extends Disposable implements ICodeWindow {
 			const isFullscreenOrMaximized = (this.windowState.mode === WindowMode.Maximized || this.windowState.mode === WindowMode.Fullscreen);
 
 			const windowConfig = this.configurationService.getValue<IWindowSettings | undefined>('window');
-
+			const anyColor = this.themeMainService.getBackgroundColor();
+			console.log(anyColor);
 			const options: BrowserWindowConstructorOptions = {
 				width: this.windowState.width,
 				height: this.windowState.height,
 				x: this.windowState.x,
 				y: this.windowState.y,
-				backgroundColor: this.themeMainService.getBackgroundColor(),
+				transparent: true,
+				backgroundColor: '#00000000',
 				minWidth: WindowMinimumSize.WIDTH,
 				minHeight: WindowMinimumSize.HEIGHT,
 				show: !isFullscreenOrMaximized,
