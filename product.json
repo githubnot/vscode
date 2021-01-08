@@ -34,12 +34,14 @@
 	"linuxIconName": "com.visualstudio.code.oss",
 	"licenseFileName": "LICENSE.txt",
 	"reportIssueUrl": "https://github.com/microsoft/vscode/issues/new",
-	"urlProtocol": "code-oss",
+	"urlProtocol": "code",
 	"extensionAllowedProposedApi": [
 		"ms-vscode.vscode-js-profile-flame",
 		"ms-vscode.vscode-js-profile-table",
 		"ms-vscode.github-browser",
-		"ms-vscode.github-richnav"
+		"ms-vscode.github-richnav",
+		"ms-vsliveshare.vsliveshare",
+		"ms-vscode-remote.remote-ssh"
 	],
 	"builtInExtensions": [
 		{
