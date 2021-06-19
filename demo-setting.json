@@ -1,0 +1,25 @@
+{
+    "workbench.colorTheme": "Monokai",
+    "workbench.colorCustomizations": {
+                    "workbench.background": "#ff000000",
+                    "editor.background": "#00000040",
+                    "editor.foreground": "#ffffff",
+                    "editor.inactiveSelectionBackground": "#3A3D4188",
+                    "editorIndentGuide.background": "#40404000",
+                    "editorIndentGuide.activeBackground": "#70707000",
+                    "editor.selectionHighlightBackground": "#ADD6FF26",
+                    "editor.lineHighlightBorder": "#ffffff30",
+                    "list.dropBackground": "#383B3D88",
+                    "activityBarBadge.background": "#007ACC88",
+                    "sideBarTitle.foreground": "#BBBBBB",
+                    "input.placeholderForeground": "#A6A6A6",
+                    "settings.textInputBackground": "#29292988",
+                    "settings.numberInputBackground": "#29292988",
+                    "menu.background": "#25252688",
+                    "menu.foreground": "#CCCCCC",
+                    "statusBarItem.remoteForeground": "#FFF",
+                    "statusBarItem.remoteBackground": "#16825D88",
+                    "terminal.background": "#00000000",
+                    "terminal.ansiBlack": "#00000030"
+            }
+}
